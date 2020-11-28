@@ -54,4 +54,26 @@ var TxtRotate = function(el, toRotate, period) {
     css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #666 }";
     document.body.appendChild(css);
   };
-  
+
+///////////  Show Star Wars On Scroll  ///////////
+
+const titleText = document.querySelector('.long-time-ago');
+
+function callbackFunc(entries, observer)
+{
+  entries.forEach(entry => {
+    if(entry.isIntersecting) {
+      titleText.classList.remove("star-wars");
+      titleText.classList.add("star-wars");
+    }
+  });
+}
+
+let options = {
+    root: null,
+    rootMargin: '0px',
+    threshold: 0.3
+  };
+
+let observer = new IntersectionObserver(callbackFunc, options);
+observer.observe(titleText)

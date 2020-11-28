@@ -3,10 +3,12 @@
   <head>
     <title>Dylan Black</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
+
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
     <link href="styles.css" rel="stylesheet" type="text/css" />
-    <link rel='icon' href='favicon.ico' type='image/x-icon'/ >
-    <script src="script.js"></script>
+    <link rel="shortcut icon" type="image/jpg" href=”favicon.ico”/>
   </head>
 
   <body>
@@ -19,7 +21,6 @@
             <li><a class="fancy-link" href="#">Home</a></li>
             <li><a class="fancy-link" href="#about">About</a></li>
             <li><a class="fancy-link" href="#portfolio">Portfolio</a></li>
-            <li><a class="fancy-link" href="#skills">Skills</a></li>
             <li><a class="fancy-link" href="./public/Resume.pdf" download>Resume</a></li>
             <li><a class="fancy-link" href="#contact">Contact</a></li>
           </ul>
@@ -42,10 +43,24 @@
     </section>
 
     <section id="about">
-      <div class="about-me">
+        
+      <div class="final-about-me">
         <h1>About Me</h1>
-        <h3 style="text-align: left">0.8 scores and 1 year ago in a galaxy far far away,</h3>
+        <h3 class="about-me-text">Hey hey! I'm a developer and student from Tinton Falls, NJ 
+          specializing in front-end web development and React development. 
+          In my free time, I love watching movies and playing classic video games 
+          (currently going for a sub-5 minute Super Mario Bros. run!). I'm also 
+          currently working as an intern for <a href="http://www.fiveable.me"><img class='fiveable-logo' src="./public/fiveable-blue.png" /></a>, an ed-tech company building a 
+          social platform for high school students. Hover on the image to see some of my skills!
+        </h3>
+      </div>
+      
+      <!-- Image w/ hover effect to show skills -->
+      <div class="image-skills">
+        <img class='pfp' src='./public/profile-pic.jpg' />
+        <h2>My Skills</h2>
       </div>
     </section>
+    <script src="script.js" defer></script>
   </body> 
 </html>
