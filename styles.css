@@ -157,6 +157,7 @@ h3 {
 .fiveable-logo {
   height: 48px;
   width: 96px;
+  vertical-align: middle;
 }
 
 .pfp {
