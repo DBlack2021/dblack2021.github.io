@@ -119,6 +119,7 @@ h3 {
 
 .landing {
   padding-bottom: 75px;
+  margin-top: 50px;
 }
 
 /* *** Animated Styles *** */
@@ -144,7 +145,7 @@ h3 {
   display: flex;
   flex-direction: row;
   align-items: stretch;
-  padding-top: 40px;
+  padding-top: 75px;
 }
 
 .final-about-me {
@@ -155,6 +156,7 @@ h3 {
 }
 
 .fiveable-logo {
+  display: inline-block;
   height: 48px;
   width: 96px;
   vertical-align: middle;
