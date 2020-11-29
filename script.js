@@ -1,3 +1,15 @@
+var isInViewport = function (elem) {
+    var bounding = elem.getBoundingClientRect();
+    return (
+        bounding.top >= 0 &&
+        bounding.left >= 0 &&
+        bounding.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+        bounding.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+};
+
+
+
 var TxtRotate = function(el, toRotate, period) {
     this.toRotate = toRotate;
     this.el = el;
@@ -55,3 +67,10 @@ var TxtRotate = function(el, toRotate, period) {
     document.body.appendChild(css);
   };
 
+const scrollText = document.querySelector('.scroll-text');
+let html = "";
+for(character of scrollText.textContent) {
+  let span = character == " " ? " " : `<span class="animate__animated animate__rubberBand scroll-char">${character}</span>`;
+  html += span;
+}
+scrollText.innerHTML = html;

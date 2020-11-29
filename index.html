@@ -6,6 +6,7 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 
     <link href="styles.css" rel="stylesheet" type="text/css" />
     <link rel="shortcut icon" type="image/jpg" href=”favicon.ico”/>
@@ -14,9 +15,9 @@
   <body>
     <header>
       <div class="nav-container">
-        <img src="public/tetris_initials.svg" alt="DB" class="logo"/> <!-- TODO: Show animation on hover -->
+        <img src="public/tetris_initials.svg" alt="DB" class="logo animate__animated animate__slideInDown"/>
 
-        <nav>
+        <nav class="animate__animated animate__fadeInRightBig">
           <ul>
             <li><a class="fancy-link" href="#">Home</a></li>
             <li><a class="fancy-link" href="#about">About</a></li>
@@ -29,7 +30,7 @@
       </div>
     </header>
     
-    <section class="landing">
+    <section class="landing animate__animated animate__zoomInDown">
       <div class="intro-text">
         <h1>Hey! I'm <span class="bi-flag">Dylan</span></h1>
         <h3 style="margin-top: 15px">
@@ -39,7 +40,7 @@
           data-rotate='[ "Web Developer", "Education Activist", "Amateur Tetris Player"]'></span>
         </h3>
       </div>
-      <h3 class="scroll-text">Scroll To Learn More About Me and My Work</h3>
+      <h3 class="scroll-text">Scroll To Learn More About Me and My Work</h3> <!-- class = 'animate__animated animate__rubber-band' -->
     </section>
 
     <section id="about">
@@ -49,9 +50,9 @@
         <h3 class="about-me-text">Hey hey! I'm a developer and student from Tinton Falls, NJ 
           specializing in front-end web development and React development. 
           In my free time, I love watching movies and playing classic video games 
-          (currently going for a sub-5 minute Super Mario Bros. run!). I'm also 
+          (Especially speedrunning <span class="mario">Super Mario Bros.</span>!). I'm also 
           currently working as an intern for <a href="http://www.fiveable.me" target="_blank"><img class='fiveable-logo' src="./public/fiveable-blue.png" /></a>, an ed-tech company building a 
-          social platform for high school students. Hover on the image to see some of my skills!
+          social platform for high school students. Fun fact: I can play the guitar and bass!
         </h3>
       </div>
       
