@@ -17,78 +17,17 @@ body {
   margin: 0;
 }
 
-
-/**** NAV STYLING *** */
-.logo {
-  height: 75px;
-  width: 75px;
-  float: left;
-  padding: 10px 0;
-}
-
-.nav-container {
-  width: 80%;
-  margin:0 auto;
-  font-family: 'Press Start 2P', cursive;
-}
-
-header {
-  background: var(--main-text-color);
-  z-index: 1;
-}
-
-header::after {
-  content: '';
-  display: table;
-  clear: both;
-}
-
-nav {
-  float: right;
-}
-
-nav ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-nav li {
-  display: inline-block;
-  margin-left: 70px;
-  padding-top: 30px;
-}
-
-nav a {
-  color: #E0E1DD;
-  text-decoration: none;
-  text-transform: uppercase;
+img {
+  border-radius: 32px;
+  width: 160px;
+  height: 40px;
+  vertical-align: middle;
 }
 
 /**** Fancy Link Styling *** */
+
 .fancy-link {
-  position: relative;
-  text-align: center;
-}
-
-.fancy-link::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 3px;
-  background: currentColor;
-
-  transform: scaleX(0);
-  transform-origin: right;
-  transition: transform 100ms ease-in;
-}
-
-.fancy-link:hover::after {
-  height: 3px;
-  transform: scaleX(1);
-  transform-origin: left;
+  color: var(--main-text-color)
 }
 
 /* *** General Section Styling *** */
@@ -121,17 +60,6 @@ h3 {
   color: var(--main-text-color);
 }
 
-/* *** Landing Specific Styling *** */
-
-.scroll-text {
-  margin-top: 75px;
-}
-
-.landing {
-  padding-bottom: 75px;
-  margin-top: 50px;
-}
-
 /* *** Animated Styles *** */
 
 .bi-flag {
@@ -140,105 +68,12 @@ h3 {
   background-clip: text;
   -webkit-background-clip: text;
   transition: color 250ms ease;
-
+  font-family: 'Press Start 2P';
+  font-size: 50px;
   text-decoration: underline;
 }
 
 .bi-flag:hover {
   color: transparent;
   transition: 500ms ease;
-}
-
-/* *** About Me *** */
-
-#about {
-  display: flex;
-  flex-direction: row;
-  align-items: stretch;
-  padding-top: 75px;
-}
-
-.final-about-me {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  width: 60%;
-  margin-bottom: 40px;
-}
-
-.fiveable-logo {
-  display: inline-block;
-  height: 48px;
-  width: 96px;
-  vertical-align: middle;
-  transform: scale(1);
-  transition: transform 0.2s ease;
-}
-
-.fiveable-logo:hover {
-  transform: scale(1.125);
-}
-
-.pfp {
-  display: block;
-  transform: scale(1.5);
-  border-radius: 100%;
-  padding: 40px;
-  padding-top: 120px;
-}
-
-.about-me-text {
-  text-align: left;
-}
-
-.image-skills {
-  width: 40%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.mario {
-  background-image: url(./public/mario.gif);
-  background-clip: text;
-  -webkit-background-clip: text;
-  background-size: contain;
-  color: var(--main-text-color);
-}
-
-.mario:hover {
-  color: transparent;
-  transition: 250ms ease;
-}
-
-/* *** Portfolio Styling *** */
-
-#portfolio {
-  display: flex;
-  flex-direction: column;
-}
-
-.projects {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  flex-wrap: wrap;
-}
-
-#portfolio h1 {
-  margin-bottom: 50px;
-}
-
-.project {
-  padding: 50px;
-  width: 30%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.project h4 {
-  font-size: 24px;
-  font-weight: 900;
-  color: var(--main-text-color);
 }
