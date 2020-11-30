@@ -1,5 +1,13 @@
+:root {
+  --main-text-color: #778DA9;
+}
+
 * {
   box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -25,7 +33,8 @@ body {
 }
 
 header {
-  background: #778DA9;
+  background: var(--main-text-color);
+  z-index: 1;
 }
 
 header::after {
@@ -59,6 +68,7 @@ nav a {
 /**** Fancy Link Styling *** */
 .fancy-link {
   position: relative;
+  text-align: center;
 }
 
 .fancy-link::after {
@@ -67,7 +77,7 @@ nav a {
   left: 0;
   bottom: 0;
   width: 100%;
-  height: 2px;
+  height: 3px;
   background: currentColor;
 
   transform: scaleX(0);
@@ -76,7 +86,7 @@ nav a {
 }
 
 .fancy-link:hover::after {
-  height: 2px;
+  height: 3px;
   transform: scaleX(1);
   transform-origin: left;
 }
@@ -94,21 +104,21 @@ h1 {
   margin-top: 50px;
   text-align: center;
   font-size: 80px;
-  color: #778DA9;
+  color: var(--main-text-color);
   margin-bottom: 10px;
 }
 
 h2 {
   margin-top: 40px;
   font-size: 30px;
-  color: #778DA9;
+  color: var(--main-text-color);
   font-family: 'Press Start 2P', cursive;
 }
 
 h3 {
   text-align: center;
   font-size: 40px;
-  color: #778DA9;
+  color: var(--main-text-color);
 }
 
 /* *** Landing Specific Styling *** */
@@ -125,7 +135,7 @@ h3 {
 /* *** Animated Styles *** */
 
 .bi-flag {
-  color: #778DA9;
+  color: var(--main-text-color);
   background: linear-gradient(90deg,#D60270, #9B4F96, #0038A8);
   background-clip: text;
   -webkit-background-clip: text;
@@ -193,10 +203,42 @@ h3 {
   background-clip: text;
   -webkit-background-clip: text;
   background-size: contain;
-  color: #778DA9;
+  color: var(--main-text-color);
 }
 
 .mario:hover {
   color: transparent;
   transition: 250ms ease;
+}
+
+/* *** Portfolio Styling *** */
+
+#portfolio {
+  display: flex;
+  flex-direction: column;
+}
+
+.projects {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+#portfolio h1 {
+  margin-bottom: 50px;
+}
+
+.project {
+  padding: 50px;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.project h4 {
+  font-size: 24px;
+  font-weight: 900;
+  color: var(--main-text-color);
 }

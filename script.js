@@ -70,7 +70,7 @@ var TxtRotate = function(el, toRotate, period) {
 const scrollText = document.querySelector('.scroll-text');
 let html = "";
 for(character of scrollText.textContent) {
-  let span = character == " " ? " " : `<span class="animate__animated animate__rubberBand scroll-char">${character}</span>`;
+  let span = character == " " ? " " : `<span class="scroll-char">${character}</span>`;
   html += span;
 }
 scrollText.innerHTML = html;
