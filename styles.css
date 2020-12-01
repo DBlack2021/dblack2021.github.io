@@ -132,6 +132,10 @@ h3 {
   margin-top: 50px;
 }
 
+.txt-rotate {
+  font-family: 'Fira Code', monospace;
+  color: rgb(18, 185, 18);
+}
 /* *** Animated Styles *** */
 
 .bi-flag {
