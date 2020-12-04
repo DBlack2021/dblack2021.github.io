@@ -76,7 +76,6 @@ const collectionRef = db.collection("projects");
 
 collectionRef.get().then((snap) => {
   let data = snap.docs.map(doc => doc.data());
-  console.log(data);
   let tiles = data.map(project => Tile(project.title, project.description, project.tools, project['code_url'], project['live_url'], project.img)).join('');
   projectsSection.innerHTML = tiles;
 });

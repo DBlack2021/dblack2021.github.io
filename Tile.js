@@ -18,11 +18,11 @@ export function Tile (title, description, tools, codeLink, liveLink, img) {
     </ul>
     <div class="back-links">
       ${codeLink ?
-        `<a href=${codeLink}>See the Code</a>`
+        `<a href=${codeLink} target="_blank">See the Code</a>`
         : ""
       }
       ${liveLink?
-        `<a href=${liveLink}>See It In Action</a>`
+        `<a href=${liveLink} target="_blank">See It In Action</a>`
         : ""
       }
     </div>

@@ -34,7 +34,9 @@ body {
 
 header {
   background: var(--main-text-color);
-  z-index: 1;
+  z-index: 10;
+  top: 0;
+  position: sticky;
 }
 
 header::after {
@@ -217,11 +219,22 @@ h3 {
   transition: 250ms ease;
 }
 
+.homeroom {
+  color: var(--main-text-color);
+  transition: 250ms ease;
+}
+
+.homeroom:hover {
+  color: #ffd906;
+  transition: 250ms ease;
+}
+
 /* *** Portfolio Styling *** */
 
 #portfolio {
   display: flex;
   flex-direction: column;
+  padding-top: 10px;
 }
 
 .projects {
@@ -267,7 +280,7 @@ h3 {
 .tile .front {
   background: #fff;
   transition: all 0.5s ease-in-out;
-  z-index: 2;
+  z-index: 1;
 }
 .tile .front h3 {
   color: white;
@@ -279,7 +292,7 @@ h3 {
 .tile .back {
   background: black;
   color: white;
-  z-index: 1;
+  z-index: 0;
   padding-top: 50px;
   height: 100%;
 }
