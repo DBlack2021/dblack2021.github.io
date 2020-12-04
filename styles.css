@@ -133,9 +133,11 @@ h3 {
 }
 
 .txt-rotate {
-  font-family: 'Fira Code', monospace;
+  font-weight: 100;
+  font-family: monospace;
   color: rgb(18, 185, 18);
 }
+
 /* *** Animated Styles *** */
 
 .bi-flag {
@@ -268,11 +270,11 @@ h3 {
   z-index: 2;
 }
 .tile .front h3 {
-  font-size: 2em;
   color: white;
+  font-size: 2vw;
   text-shadow: 0 0 5px #000;
-  margin-top: -1.5em;
-  margin-bottom: 1.5em;
+  margin-top: -2.5em;
+  margin-bottom: 2.25em;
 }
 .tile .back {
   background: black;
@@ -284,8 +286,7 @@ h3 {
 .tile .back h3 {
   font-size: 1.5em;
   color: white;
-  margin-top: 1em;
-  margin-bottom: 1em;
+  margin-bottom: 0;
 }
 .tile .back a {
   display: block;
@@ -297,4 +298,19 @@ h3 {
 .tile:hover .front {
   top: -300px;
   transform: rotate(2deg);
+}
+
+.tile ul {
+  list-style: none;
+  padding: 0;
+}
+
+.tile li {
+  margin-bottom: 10px;
+}
+
+.back-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

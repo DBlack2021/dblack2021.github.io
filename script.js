@@ -1,14 +1,18 @@
-var isInViewport = function (elem) {
-    var bounding = elem.getBoundingClientRect();
-    return (
-        bounding.top >= 0 &&
-        bounding.left >= 0 &&
-        bounding.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-        bounding.right <= (window.innerWidth || document.documentElement.clientWidth)
-    );
+import { Tile } from './Tile.js'
+
+// Your web app's Firebase configuration
+var firebaseConfig = {
+  apiKey: "AIzaSyDlbWze-x9Vt-7OdHzPh0hLtpczFW9mORQ",
+  authDomain: "portfolio-website-8b878.firebaseapp.com",
+  databaseURL: "https://portfolio-website-8b878.firebaseio.com",
+  projectId: "portfolio-website-8b878",
+  storageBucket: "portfolio-website-8b878.appspot.com",
+  messagingSenderId: "466157381573",
+  appId: "1:466157381573:web:b03f107dac50ef154c0dac"
 };
-
-
+// Initialize Firebase
+firebase.initializeApp(firebaseConfig);
+const db = firebase.firestore();
 
 var TxtRotate = function(el, toRotate, period) {
     this.toRotate = toRotate;
@@ -67,10 +71,14 @@ var TxtRotate = function(el, toRotate, period) {
     document.body.appendChild(css);
   };
 
-const scrollText = document.querySelector('.scroll-text');
-let html = "";
-for(character of scrollText.textContent) {
-  let span = character == " " ? " " : `<span class="scroll-char">${character}</span>`;
-  html += span;
-}
-scrollText.innerHTML = html;
+const projectsSection = document.querySelector('.projects');
+const collectionRef = db.collection("projects");
+
+collectionRef.get().then((snap) => {
+  let data = snap.docs.map(doc => doc.data());
+  console.log(data);
+  let tiles = data.map(project => Tile(project.title, project.description, project.tools, project['code_url'], project['live_url'], project.img)).join('');
+  projectsSection.innerHTML = tiles;
+});
+
+//(title, description, tools, codeLink, liveLink)
