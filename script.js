@@ -1,19 +1,4 @@
 import { Tile } from './Tile.js'
-
-// Your web app's Firebase configuration
-var firebaseConfig = {
-  apiKey: "AIzaSyDlbWze-x9Vt-7OdHzPh0hLtpczFW9mORQ",
-  authDomain: "portfolio-website-8b878.firebaseapp.com",
-  databaseURL: "https://portfolio-website-8b878.firebaseio.com",
-  projectId: "portfolio-website-8b878",
-  storageBucket: "portfolio-website-8b878.appspot.com",
-  messagingSenderId: "466157381573",
-  appId: "1:466157381573:web:b03f107dac50ef154c0dac"
-};
-// Initialize Firebase
-firebase.initializeApp(firebaseConfig);
-const db = firebase.firestore();
-
 var TxtRotate = function(el, toRotate, period) {
     this.toRotate = toRotate;
     this.el = el;
@@ -71,13 +56,15 @@ var TxtRotate = function(el, toRotate, period) {
     document.body.appendChild(css);
   };
 
-const projectsSection = document.querySelector('.projects');
-const collectionRef = db.collection("projects");
-
-collectionRef.get().then((snap) => {
-  let data = snap.docs.map(doc => doc.data());
+let projectsSection = document.querySelector('.projects');
+fetch('./projects.json').then((response) => {
+  return response.json();
+}).then((data) => {
   let tiles = data.map(project => Tile(project.title, project.description, project.tools, project['code_url'], project['live_url'], project.img)).join('');
   projectsSection.innerHTML = tiles;
+}).catch((err) => {
+  console.warn(err);
 });
+
 
 //(title, description, tools, codeLink, liveLink)
