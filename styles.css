@@ -322,7 +322,6 @@ h3 {
 }
 .tile:hover .front {
   top: -300px;
-  transform: rotate(2deg);
 }
 
 .tile ul {
@@ -338,4 +337,44 @@ h3 {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+/* *** Skillbars *** */
+
+.skill-bar-container {
+  position: relative;
+  width: 100%;
+  border-radius: 4px;
+  background-color: whitesmoke;
+  margin-bottom: 1.5em;
+}
+.skill-bar-container .skill-bar {
+  display: block;
+  border-radius: 4px;
+  height: 35px;
+}
+.skill-bar-container .skill-bar.level1 {
+  width: 33%;
+  background-color: var(--main-text-color);
+}
+.skill-bar-container .skill-bar.level2 {
+  width: 67%;
+  background-color: var(--main-text-color);
+}
+.skill-bar-container .skill-bar.level3 {
+  width: 100%;
+  background-color: var(--main-text-color);
+}
+
+.skill-bar-container .skill-name {
+  position: absolute;
+  top: 5px;
+  left: 10px;
+  color: #333;
+}
+.skill-bar-container .skill-level {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  color: #333;
 }

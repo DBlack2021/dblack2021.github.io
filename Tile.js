@@ -5,8 +5,7 @@ export function Tile (title, description, tools, codeLink, liveLink, img) {
       <img src="https://picsum.photos/424/156"/>
       <h3>${title}</h3>
       <p>${description}</p>
-      <br>
-      Hover to View Details
+      <p>Hover to View Details</p>
     </div>
   </div>
   <div class="back">
