@@ -471,3 +471,8 @@ h3 {
   font-size: 1.25em;
   color: rgb(204, 8, 8);
 }
+
+textarea {
+  font-family: "Work Sans";
+  font-size: 1.5em;
+}
