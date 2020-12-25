@@ -7,10 +7,7 @@
 }
 
 html {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -18,28 +15,102 @@ body {
   font-family: 'Work Sans', sans-serif;
   font-weight: 700;
   margin: 0;
+  overflow-x: hidden;
 }
 
-img {
-  border-radius: 32px;
-  width: 160px;
-  height: 40px;
-  vertical-align: middle;
+
+/**** NAV STYLING *** */
+.logo {
+  height: 75px;
+  width: 75px;
+  float: left;
+  padding: 10px 0;
+}
+
+.nav-container {
+  width: 80%;
+  margin:0 auto;
+  font-family: 'Press Start 2P', cursive;
+}
+
+header {
+  background: var(--main-text-color);
+  z-index: 10;
+  top: 0;
+  position: sticky;
+}
+
+header::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+nav {
+  float: right;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 70px;
+  padding-top: 30px;
+}
+
+nav a {
+  color: #E0E1DD;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 1200px) {
+  header {
+    display: none;
+  }
 }
 
 /**** Fancy Link Styling *** */
-
 .fancy-link {
-  color: var(--main-text-color)
+  position: relative;
+  text-align: center;
+}
+
+.fancy-link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 3px;
+  background: currentColor;
+
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 100ms ease-in;
+}
+
+.fancy-link:hover::after {
+  height: 3px;
+  transform: scaleX(1);
+  transform-origin: left;
 }
 
 /* *** General Section Styling *** */
 
 section {
-  padding-bottom: 5%;
+  padding-top: 100px;
+  padding-bottom: 0px;
+  padding-left: 85px;
+  padding-right: 85px;
 }
 
 h1 {
+  margin-top: 50px;
   text-align: center;
   font-size: 80px;
   color: var(--main-text-color);
@@ -59,6 +130,23 @@ h3 {
   color: var(--main-text-color);
 }
 
+/* *** Landing Specific Styling *** */
+
+.scroll-text {
+  margin-top: 75px;
+}
+
+.landing {
+  padding-bottom: 75px;
+  margin-top: 50px;
+}
+
+.txt-rotate {
+  font-weight: 100;
+  font-family: monospace;
+  color: rgb(18, 185, 18);
+}
+
 /* *** Animated Styles *** */
 
 .bi-flag {
@@ -67,12 +155,319 @@ h3 {
   background-clip: text;
   -webkit-background-clip: text;
   transition: color 250ms ease;
-  font-family: 'Press Start 2P';
-  font-size: 50px;
+
   text-decoration: underline;
 }
 
 .bi-flag:hover {
   color: transparent;
   transition: 500ms ease;
+}
+
+/* *** About Me *** */
+
+#about {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  padding-top: 75px;
+}
+
+.final-about-me {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 60%;
+  margin-bottom: 40px;
+}
+
+.fiveable-logo {
+  display: inline-block;
+  height: 48px;
+  width: 96px;
+  vertical-align: middle;
+  transform: scale(1);
+  transition: transform 0.2s ease;
+}
+
+.fiveable-logo:hover {
+  transform: scale(1.125);
+}
+
+.pfp {
+  display: block;
+  transform: scale(1.5);
+  border-radius: 100%;
+  padding: 40px;
+  padding-top: 120px;
+}
+
+.about-me-text {
+  text-align: left;
+}
+
+.image-skills {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media screen and (max-width: 1000px) {
+  #about {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.mario {
+  background-image: url(./public/mario.gif);
+  background-clip: text;
+  -webkit-background-clip: text;
+  background-size: contain;
+  color: var(--main-text-color);
+}
+
+.mario:hover {
+  color: transparent;
+  transition: 250ms ease;
+}
+
+.homeroom {
+  color: var(--main-text-color);
+  transition: 250ms ease;
+}
+
+.homeroom:hover {
+  color: #ffd906;
+  transition: 250ms ease;
+}
+
+/* *** Portfolio Styling *** */
+
+#portfolio {
+  display: flex;
+  flex-direction: column;
+  padding-top: 10px;
+}
+
+.projects {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+#portfolio h1 {
+  margin-bottom: 50px;
+}
+
+/* *** Project Card Styling *** */
+
+.tile {
+  width: 30%;
+  height: 350px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2.5em;
+}
+
+@media screen and (max-width: 1000px) {
+  .tile {
+    width: 80%;
+  }
+
+  .tile .front h3 {
+    font-size: 6vh;
+    margin-bottom: 1.75em;
+  }
+}
+
+.tile .front, .tile .back {
+  display: block;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 350px;
+  position: absolute;
+  overflow: hidden;
+  text-align: center;
+
+}
+
+.tile h3, .tile p, .tile a {
+  padding: 0 20px;
+}
+.tile img {
+  max-height: 50%;
+  width: 100%;
+}
+.tile .front {
+  background: #fff;
+  transition: all 0.5s ease-in-out;
+  z-index: 1;
+}
+.tile .front h3 {
+  color: white;
+  font-size: 2vw;
+  text-shadow: 0 0 5px #000;
+  margin-top: -2.5em;
+  margin-bottom: 2.25em;
+}
+.tile .back {
+  background: black;
+  color: white;
+  z-index: 0;
+  padding-top: 50px;
+  height: 100%;
+}
+.tile .back h3 {
+  font-size: 1.5em;
+  color: white;
+  margin-bottom: 0;
+}
+.tile .back a {
+  display: block;
+  font-size: 1.2em;
+  color: white;
+  margin: 0 20px;
+  padding: 0.5em 0;
+}
+.tile:hover .front {
+  top: -300px;
+}
+
+.tile ul {
+  list-style: none;
+  padding: 0;
+}
+
+.tile li {
+  margin-bottom: 10px;
+}
+
+.back-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* *** Skillbars *** */
+
+.skill-bar-container {
+  position: relative;
+  width: 100%;
+  border-radius: 4px;
+  background-color: whitesmoke;
+  margin-bottom: 1.5em;
+}
+.skill-bar-container .skill-bar {
+  display: block;
+  border-radius: 4px;
+  height: 35px;
+}
+.skill-bar-container .skill-bar.level1 {
+  width: 33%;
+  background-color: var(--main-text-color);
+}
+.skill-bar-container .skill-bar.level2 {
+  width: 67%;
+  background-color: var(--main-text-color);
+}
+.skill-bar-container .skill-bar.level3 {
+  width: 100%;
+  background-color: var(--main-text-color);
+}
+
+.skill-bar-container .skill-name {
+  position: absolute;
+  top: 25%;
+  left: 10px;
+  color: #333;
+}
+.skill-bar-container .skill-level {
+  position: absolute;
+  top: 25%;
+  right: 10px;
+  color: #333;
+}
+
+/* *** Contact Form *** */
+
+#contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 25px;
+}
+
+.contact-form-container {
+  width: 80%;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.input,
+.msg .area {
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  margin-bottom: 25px;
+  border: 2px solid #e9eaea;
+  font-size: 14px;
+  border-radius: 5px;
+  outline: none;
+  transform: all 0.5s ease;
+}
+
+.login .input{
+  width: 48%;
+  float: left;
+  margin-right: 4%;
+}
+
+.login .input:last-child{
+  margin-right: 0;
+}
+
+.msg .area{
+  height: 200px;
+}
+
+.contact-submit {
+  width: 250px;
+  background: #486255;
+  line-height: 50px;
+  text-align: center;
+  border-radius: 5px;
+  align-self: center;
+  font-family: "Work Sans";
+  font-size: 1.5em;
+  color: #fff;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.input:focus,
+.msg .area:focus{
+  border: 2px solid #486255;
+}
+
+.area {
+  resize: none;
+}
+
+.input::placeholder {
+  font-family: "Work Sans";
+}
+
+.err-msg {
+  align-self: center;
+  font-size: 1.25em;
+  color: rgb(204, 8, 8);
 }
