@@ -68,3 +68,60 @@ fetch('./projects.json').then((response) => {
 
 
 //(title, description, tools, codeLink, liveLink)
+
+emailjs.init("user_OJTtqIGWClEsZGporBH7O");
+
+let contactForm = document.querySelector('.contact-form');
+let errField = document.querySelector(".err-msg");
+          
+function isEmail(email) {
+  return ".{1,}@[^.]{1,}".test(email);
+}
+
+function validateInput(data) {
+  console.log(data);
+  if(!data.name || !data.email || !data.message || !data.subject) {
+    errField.innerHTML = "Please fill out the whole form. Thanks!"
+    return false;
+  } else if(!isEmail(data.email)) {
+    errField.innerHTML = "Please enter a valid email address. Thanks!"
+    return false;
+  }
+  return true;
+}
+
+contactForm.addEventListener('submit', (event) => {
+  event.preventDefault();
+
+  let name = document.querySelector(".name").value;
+  let email = document.querySelector(".email").value;
+  let message = document.querySelector(".message").value;
+  let subject = document.querySelector(".subject").value;
+
+  let formData = {
+    name: name,
+    email: email,
+    message: message,
+    subject: subject
+  }
+
+
+  // these IDs from the previous steps
+  let btn = document.querySelector(".contact-submit")
+  btn.value = "Sending..."
+  emailjs.send('service_7l0wqyk', 'template_z20zdqy', formData)
+      .then(function() {
+          if(!validateInput(formData)) {
+            console.log(event.target);
+            return;
+          }
+          btn.value = "Submit"
+          alert("Your message has been successfully sent. Have a nice day!")
+      }).catch((error) => {
+        console.log(error);
+        errField.innerHTML = "There was an issue submitting your message. Please try again."
+      });
+});
+
+
+//

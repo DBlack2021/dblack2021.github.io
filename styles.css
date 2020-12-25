@@ -15,6 +15,7 @@ body {
   font-family: 'Work Sans', sans-serif;
   font-weight: 700;
   margin: 0;
+  overflow-x: hidden;
 }
 
 
@@ -441,11 +442,12 @@ h3 {
 .contact-submit {
   width: 250px;
   background: #486255;
-  height: 50px;
   line-height: 50px;
   text-align: center;
   border-radius: 5px;
-  margin: 0 auto;
+  align-self: center;
+  font-family: "Work Sans";
+  font-size: 1.5em;
   color: #fff;
   text-transform: uppercase;
   cursor: pointer;
@@ -462,4 +464,10 @@ h3 {
 
 .input::placeholder {
   font-family: "Work Sans";
+}
+
+.err-msg {
+  align-self: center;
+  font-size: 1.25em;
+  color: rgb(204, 8, 8);
 }

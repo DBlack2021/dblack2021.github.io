@@ -3,7 +3,7 @@
   <head>
     <title>Dylan Black</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
-
+    
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
@@ -113,24 +113,25 @@
 
       <div class="contact-form-container">
         <h2>Contact Me</h2> 
-        <form action="" class="contact-form">
+        <form class="contact-form">
+          <p class="err-msg"></p>
           <div class="user-info">
-            <input type="text" class="input" placeholder="Your Name"/>
-            <input type="email" class="input" placeholder="Your Email" />
+            <input type="text" class="input name" placeholder="Your Name"/>
+            <input type="email" class="input email" placeholder="Your Email" />
           </div>
 
-          <div class="subject">
-            <input type="text" class="input" placeholder="Subject" />
+          <div class="subject-container">
+            <input type="text" class="input subject" placeholder="Subject" />
           </div>
           
           <div class="msg">
-            <textarea rows="5" cols="50" class="area"></textarea>
+            <textarea rows="5" cols="50" class="area message"></textarea>
           </div>
-          <button type="submit" class="contact-submit">Submit</button>
+          <input type="submit" class="contact-submit"></input>
         </form>
       </div>
     </section>
-
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
     <script src="script.js" type="module"></script>
   </body> 
 </html>
