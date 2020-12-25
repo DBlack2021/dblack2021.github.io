@@ -375,13 +375,13 @@ h3 {
 
 .skill-bar-container .skill-name {
   position: absolute;
-  top: 5px;
+  top: 25%;
   left: 10px;
   color: #333;
 }
 .skill-bar-container .skill-level {
   position: absolute;
-  top: 5px;
+  top: 25%;
   right: 10px;
   color: #333;
 }
