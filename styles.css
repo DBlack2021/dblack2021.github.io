@@ -67,6 +67,12 @@ nav a {
   text-transform: uppercase;
 }
 
+@media screen and (max-width: 1200px) {
+  header {
+    display: none;
+  }
+}
+
 /**** Fancy Link Styling *** */
 .fancy-link {
   position: relative;
