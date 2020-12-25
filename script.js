@@ -74,17 +74,11 @@ emailjs.init("user_OJTtqIGWClEsZGporBH7O");
 let contactForm = document.querySelector('.contact-form');
 let errField = document.querySelector(".err-msg");
           
-function isEmail(email) {
-  return ".{1,}@[^.]{1,}".test(email);
-}
 
 function validateInput(data) {
   console.log(data);
   if(!data.name || !data.email || !data.message || !data.subject) {
     errField.innerHTML = "Please fill out the whole form. Thanks!"
-    return false;
-  } else if(!isEmail(data.email)) {
-    errField.innerHTML = "Please enter a valid email address. Thanks!"
     return false;
   }
   return true;
