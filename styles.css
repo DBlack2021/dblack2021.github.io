@@ -291,10 +291,17 @@ h3 {
   .tile {
     width: 80%;
   }
+}
 
+@media screen and (max-width: 1000px) {
   .tile .front h3 {
-    font-size: 6vh;
-    margin-bottom: 1.75em;
+    font-size: 3vh!important;
+    margin-bottom: 1.75em!important;
+    margin-top: -2.5em!important;
+  }
+
+  .tile .front p {
+    font-size: 1.2vh!important;
   }
 }
 
@@ -326,8 +333,8 @@ h3 {
   color: white;
   font-size: 2vw;
   text-shadow: 0 0 5px #000;
-  margin-top: -2.5em;
-  margin-bottom: 2.25em;
+  margin-top: -3em;
+  margin-bottom: 2.75em;
 }
 .tile .back {
   background: black;
@@ -365,6 +372,10 @@ h3 {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.contents {
+  height: 100%;
 }
 
 /* *** Skillbars *** */
