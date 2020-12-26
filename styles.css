@@ -1,3 +1,23 @@
+/* *** TABLE OF CONTENTS *** */
+
+/*
+
+  Global Styles - 19
+  Nav Bar - 69
+  Landing - 143
+  About Me - 173
+  Skillbars - 245
+  Portfolio - 286
+  Portfolio Cards - 305
+  Contact - 389
+  Media Queries - 473 
+  Misc - 501
+
+*/
+
+
+/* *** GLOBAL STYLES *** */
+
 :root {
   --main-text-color: #778DA9;
 }
@@ -18,23 +38,33 @@ body {
   overflow-x: hidden;
 }
 
-.intro-text {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+section {
+  padding-top: 100px;
+  padding-bottom: 0px;
+  padding-left: 85px;
+  padding-right: 85px;
 }
 
-.social-icons {
-  font-size: 2.5em;
-  color: var(--main-text-color)
+h1 {
+  margin-top: 50px;
+  text-align: center;
+  font-size: 80px;
+  color: var(--main-text-color);
+  margin-bottom: 10px;
 }
 
-.social-icons a {
-  text-decoration: none;
-  color: var(--main-text-color)
+h2 {
+  margin-top: 40px;
+  font-size: 30px;
+  color: var(--main-text-color);
+  font-family: 'Press Start 2P', cursive;
 }
 
+h3 {
+  text-align: center;
+  font-size: 40px;
+  color: var(--main-text-color);
+}
 
 /**** NAV STYLING *** */
 .logo {
@@ -85,15 +115,6 @@ nav a {
   text-transform: uppercase;
 }
 
-@media screen and (max-width: 1200px) {
-  header {
-    display: none;
-  }
-}
-
-
-
-/**** Fancy Link Styling *** */
 .fancy-link {
   position: relative;
   text-align: center;
@@ -119,37 +140,24 @@ nav a {
   transform-origin: left;
 }
 
-/* *** General Section Styling *** */
+/* *** LANDING STYLING *** */
 
-section {
-  padding-top: 100px;
-  padding-bottom: 0px;
-  padding-left: 85px;
-  padding-right: 85px;
+.intro-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-h1 {
-  margin-top: 50px;
-  text-align: center;
-  font-size: 80px;
-  color: var(--main-text-color);
-  margin-bottom: 10px;
+.social-icons {
+  font-size: 2.5em;
+  color: var(--main-text-color)
 }
 
-h2 {
-  margin-top: 40px;
-  font-size: 30px;
-  color: var(--main-text-color);
-  font-family: 'Press Start 2P', cursive;
+.social-icons a {
+  text-decoration: none;
+  color: var(--main-text-color)
 }
-
-h3 {
-  text-align: center;
-  font-size: 40px;
-  color: var(--main-text-color);
-}
-
-/* *** Landing Specific Styling *** */
 
 .landing {
   padding-bottom: 75px;
@@ -161,24 +169,8 @@ h3 {
   color: rgb(18, 185, 18);
 }
 
-/* *** Animated Styles *** */
 
-.bi-flag {
-  color: var(--main-text-color);
-  background: linear-gradient(90deg,#D60270, #9B4F96, #0038A8);
-  background-clip: text;
-  -webkit-background-clip: text;
-  transition: color 250ms ease;
-
-  text-decoration: underline;
-}
-
-.bi-flag:hover {
-  color: transparent;
-  transition: 500ms ease;
-}
-
-/* *** About Me *** */
+/* *** ABOUT ME STYLING *** */
 
 #about {
   display: flex;
@@ -227,13 +219,6 @@ h3 {
   align-items: center;
 }
 
-@media screen and (max-width: 1000px) {
-  #about {
-    flex-direction: column;
-    align-items: center;
-  }
-}
-
 .mario {
   background-image: url(./public/mario.gif);
   background-clip: text;
@@ -257,7 +242,48 @@ h3 {
   transition: 250ms ease;
 }
 
-/* *** Portfolio Styling *** */
+/* *** SKILLBAR STYLING *** */
+
+.skill-bar-container {
+  position: relative;
+  width: 100%;
+  border-radius: 4px;
+  background-color: whitesmoke;
+  margin-bottom: 1.5em;
+}
+.skill-bar-container .skill-bar {
+  display: block;
+  border-radius: 4px;
+  height: 35px;
+}
+.skill-bar-container .skill-bar.level1 {
+  width: 33%;
+  background-color: var(--main-text-color);
+}
+.skill-bar-container .skill-bar.level2 {
+  width: 67%;
+  background-color: var(--main-text-color);
+}
+.skill-bar-container .skill-bar.level3 {
+  width: 100%;
+  background-color: var(--main-text-color);
+}
+
+.skill-bar-container .skill-name {
+  position: absolute;
+  top: 25%;
+  left: 10px;
+  color: #333;
+}
+.skill-bar-container .skill-level {
+  position: absolute;
+  top: 25%;
+  right: 10px;
+  color: #333;
+}
+
+
+/* *** PORTFOLIO STYLING *** */
 
 #portfolio {
   display: flex;
@@ -276,7 +302,7 @@ h3 {
   margin-bottom: 50px;
 }
 
-/* *** Project Card Styling *** */
+/* *** PORTFOLIO CARD STYLING *** */
 
 .tile {
   width: 30%;
@@ -285,24 +311,6 @@ h3 {
   display: flex;
   justify-content: center;
   margin-bottom: 2.5em;
-}
-
-@media screen and (max-width: 1000px) {
-  .tile {
-    width: 80%;
-  }
-}
-
-@media screen and (max-width: 1000px) {
-  .tile .front h3 {
-    font-size: 3vh!important;
-    margin-bottom: 1.75em!important;
-    margin-top: -2.5em!important;
-  }
-
-  .tile .front p {
-    font-size: 1.2vh!important;
-  }
 }
 
 .tile .front, .tile .back {
@@ -333,8 +341,8 @@ h3 {
   color: white;
   font-size: 2vw;
   text-shadow: 0 0 5px #000;
-  margin-top: -3em;
-  margin-bottom: 2.75em;
+  margin-top: -25%;
+  margin-bottom: 25%;
 }
 .tile .back {
   background: black;
@@ -378,47 +386,7 @@ h3 {
   height: 100%;
 }
 
-/* *** Skillbars *** */
-
-.skill-bar-container {
-  position: relative;
-  width: 100%;
-  border-radius: 4px;
-  background-color: whitesmoke;
-  margin-bottom: 1.5em;
-}
-.skill-bar-container .skill-bar {
-  display: block;
-  border-radius: 4px;
-  height: 35px;
-}
-.skill-bar-container .skill-bar.level1 {
-  width: 33%;
-  background-color: var(--main-text-color);
-}
-.skill-bar-container .skill-bar.level2 {
-  width: 67%;
-  background-color: var(--main-text-color);
-}
-.skill-bar-container .skill-bar.level3 {
-  width: 100%;
-  background-color: var(--main-text-color);
-}
-
-.skill-bar-container .skill-name {
-  position: absolute;
-  top: 25%;
-  left: 10px;
-  color: #333;
-}
-.skill-bar-container .skill-level {
-  position: absolute;
-  top: 25%;
-  right: 10px;
-  color: #333;
-}
-
-/* *** Contact Form *** */
+/* *** CONTACT STYLING *** */
 
 #contact {
   display: flex;
@@ -500,4 +468,49 @@ h3 {
 textarea {
   font-family: "Work Sans";
   font-size: 1.5em;
+}
+
+/* *** MEDIA QUERIES *** */
+
+@media screen and (max-width: 1200px) {
+  header {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .tile {
+    width: 80%;
+  }
+  .tile .front h3 {
+    font-size: 3vh!important;
+    margin-bottom: 1.75em!important;
+    margin-top: -2.5em!important;
+  }
+
+  .tile .front p {
+    font-size: 1.2vh!important;
+  }
+
+  #about {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* *** MISC STYLING *** */
+
+.bi-flag {
+  color: var(--main-text-color);
+  background: linear-gradient(90deg,#D60270, #9B4F96, #0038A8);
+  background-clip: text;
+  -webkit-background-clip: text;
+  transition: color 250ms ease;
+
+  text-decoration: underline;
+}
+
+.bi-flag:hover {
+  color: transparent;
+  transition: 500ms ease;
 }
