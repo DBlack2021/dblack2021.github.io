@@ -439,7 +439,7 @@ nav a {
   text-align: center;
   border-radius: 5px;
   align-self: center;
-  font-family: "Work Sans";
+  font-family: "Work Sans", sans-serif;
   font-size: 1.5em;
   color: #fff;
   text-transform: uppercase;
@@ -455,8 +455,13 @@ nav a {
   resize: none;
 }
 
+input[type="text"]
+{
+    font-family: "Work Sans", sans-serif;
+}
+
 .input::placeholder {
-  font-family: "Work Sans";
+  font-family: "Work Sans", sans-serif;
 }
 
 .err-msg {
@@ -466,7 +471,7 @@ nav a {
 }
 
 textarea {
-  font-family: "Work Sans";
+  font-family: "Work Sans", sans-serif;
   font-size: 1.5em;
 }
 
