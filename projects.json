@@ -32,10 +32,10 @@
   },
   
    {
-   "code_url":"https://github.com/DBlack2021/turntable-television",
-   "description":"WIP: Can't decide what to watch? Let fate decide!",
-   "live_url":"",
-   "title":"Turntable Television",
-   "tools":["React", "MaterialUI", "NextJS", "TMDb API"]
+   "code_url":"https://github.com/DBlack2021/movie-picker",
+   "description":"Can't decide what to watch? Let fate decide!",
+   "live_url":"https://movie-picker.vercel.app/",
+   "title":"Movie Picker",
+   "tools":["React", "MaterialUI", "NextJS", "CSS", "TMDb API"]
   }
 ]
