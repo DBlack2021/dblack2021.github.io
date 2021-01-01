@@ -365,6 +365,7 @@ nav a {
 }
 .tile:hover .front {
   top: -300px;
+  transform: rotate(2.5deg);
 }
 
 .tile ul {
