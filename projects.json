@@ -41,7 +41,7 @@
   
   {
    "code_url":"https://github.com/DBlack2021/logo-interpreter",
-   "description":"Can't decide what to watch? Let fate decide!",
+   "description":"A simple interpreter based off of the LOGO programming language",
    "live_url":"",
    "title":"LOGO Interpreter",
    "tools":["Javascript", "p5.js", "HTML", "CSS"]
