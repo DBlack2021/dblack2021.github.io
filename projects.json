@@ -44,6 +44,6 @@
    "description":"A simple interpreter based off of the LOGO programming language",
    "live_url":"",
    "title":"LOGO Interpreter",
-   "tools":["Javascript", "p5.js", "HTML", "CSS"]
+   "tools":["JavaScript", "p5.js", "HTML", "CSS"]
   }
 ]
