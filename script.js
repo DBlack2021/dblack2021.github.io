@@ -87,16 +87,16 @@ function validateInput(data) {
 contactForm.addEventListener('submit', (event) => {
   event.preventDefault();
 
-  let name = document.querySelector(".name").value;
-  let email = document.querySelector(".email").value;
-  let message = document.querySelector(".message").value;
-  let subject = document.querySelector(".subject").value;
+  let name = document.querySelector(".name");
+  let email = document.querySelector(".email");
+  let message = document.querySelector(".message");
+  let subject = document.querySelector(".subject");
 
   let formData = {
-    name: name,
-    email: email,
-    message: message,
-    subject: subject
+    name: name.value,
+    email: email.value,
+    message: message.value,
+    subject: subject.value
   }
 
 
@@ -110,7 +110,11 @@ contactForm.addEventListener('submit', (event) => {
             return;
           }
           btn.value = "Submit"
-          alert("Your message has been successfully sent. Have a nice day!")
+          alert("Your message has been successfully sent. Have a nice day!");
+          name.value = "";
+          email.value = "";
+          message.value = "";
+          subject.value = "";
       }).catch((error) => {
         console.log(error);
         errField.innerHTML = "There was an issue submitting your message. Please try again."
