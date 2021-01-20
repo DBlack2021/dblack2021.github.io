@@ -302,6 +302,10 @@ nav a {
   margin-bottom: 50px;
 }
 
+#portfolio .github-head {
+  margin: 0;
+}
+
 /* *** PORTFOLIO CARD STYLING *** */
 
 .tile {
@@ -517,6 +521,20 @@ textarea {
 }
 
 .bi-flag:hover {
+  color: transparent;
+  transition: 500ms ease;
+}
+
+.github {
+  color: var(--main-text-color);
+  text-decoration: underline;
+  background: rgb(255, 255, 255);
+  background-clip: text;
+  -webkit-background-clip: text;
+  transition: color 250ms ease;
+}
+
+.github:hover {
   color: transparent;
   transition: 500ms ease;
 }
