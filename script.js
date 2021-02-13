@@ -62,9 +62,7 @@ fetch('./projects.json').then((response) => {
 }).then((data) => {
   let tiles = data.map(project => Tile(project.title, project.description, project.tools, project['code_url'], project['live_url'], project.img)).join('');
   projectsSection.innerHTML = tiles;
-}).catch((err) => {
-  console.warn(err);
-});
+})
 
 
 //(title, description, tools, codeLink, liveLink)
