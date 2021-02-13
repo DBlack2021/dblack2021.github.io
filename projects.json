@@ -40,5 +40,5 @@
    "live_url":"",
    "title":"React Pokedex",
    "tools":["React", "MaterialUI", "CSS", "PokeAPI"]
-  },
+  }
 ]
