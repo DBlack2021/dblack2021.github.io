@@ -6,39 +6,34 @@
    "title":"Personal Website",
    "tools":["HTML", "CSS", "JavaScript", "JSON"]
   },
-
   {
    "code_url":"https://github.com/DBlack2021/movie-picker",
    "description":"Can't decide what to watch? Let fate decide!",
    "live_url":"https://movie-picker.vercel.app/",
    "title":"Movie Picker",
    "tools":["React", "MaterialUI", "NextJS", "CSS", "TMDb API"]
-  },
-  
+  }, 
   {
    "code_url":"https://github.com/DBlack2021/message-board",
    "description":"A fullstack message board using Firebase Firestore and Auth",
    "live_url":"https://message--board.vercel.app/",
    "title":"Message Board",
    "tools":["React", "CSS", "NextJS", "Firebase Firestore", "Firebase Authentication"]
-  },
-  
+  }, 
   {
    "code_url":"",
    "description":"As an intern at Fiveable, I developed and migrated React components and worked with both dev. and design teams to develop new features",
    "live_url":"http://fiveable.me",
    "title":"Fiveable",
    "tools":["React", "NextJS", "MaterialUI", "React Spring", "Firebase/Firestore"]
-  },
-  
+  },  
   {
    "code_url":"https://github.com/DBlack2021/covid-19-simulation",
    "description":"A simulation of COVID-19 spreading and eventually recovering among a population of randomly moving \"citizens\"",
    "live_url":"https://editor.p5js.org/DylanBlack2021/sketches/tBWLz4I_4",
    "title":"Epidemic Simulator",
    "tools":["HTML", "CSS", "JavaScript", "p5.js"]
-  },
-  
+  }, 
   {
    "code_url":"https://github.com/DBlack2021/react-pokedex",
    "description":"WIP: Gotta Catch 'Em All! A paginated pokedex built in React",
@@ -46,5 +41,4 @@
    "title":"React Pokedex",
    "tools":["React", "MaterialUI", "CSS", "PokeAPI"]
   },
-
 ]
