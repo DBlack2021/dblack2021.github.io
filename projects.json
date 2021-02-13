@@ -6,6 +6,22 @@
    "title":"Personal Website",
    "tools":["HTML", "CSS", "JavaScript", "JSON"]
   },
+
+  {
+   "code_url":"https://github.com/DBlack2021/movie-picker",
+   "description":"Can't decide what to watch? Let fate decide!",
+   "live_url":"https://movie-picker.vercel.app/",
+   "title":"Movie Picker",
+   "tools":["React", "MaterialUI", "NextJS", "CSS", "TMDb API"]
+  },
+  
+  {
+   "code_url":"https://github.com/DBlack2021/message-board",
+   "description":"A fullstack message board using Firebase Firestore and Auth",
+   "live_url":"https://message--board.vercel.app/",
+   "title":"Message Board",
+   "tools":["React", "CSS", "NextJS", "Firebase Firestore", "Firebase Authentication"]
+  },
   
   {
    "code_url":"",
@@ -30,20 +46,5 @@
    "title":"React Pokedex",
    "tools":["React", "MaterialUI", "CSS", "PokeAPI"]
   },
-  
-  {
-   "code_url":"https://github.com/DBlack2021/movie-picker",
-   "description":"Can't decide what to watch? Let fate decide!",
-   "live_url":"https://movie-picker.vercel.app/",
-   "title":"Movie Picker",
-   "tools":["React", "MaterialUI", "NextJS", "CSS", "TMDb API"]
-  },
-  
-  {
-   "code_url":"https://github.com/DBlack2021/logo-interpreter",
-   "description":"A simple interpreter based off of the LOGO programming language",
-   "live_url":"",
-   "title":"LOGO Interpreter",
-   "tools":["JavaScript", "p5.js", "HTML", "CSS"]
-  }
+
 ]
