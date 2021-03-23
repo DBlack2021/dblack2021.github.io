@@ -31,7 +31,7 @@
    "code_url":"https://github.com/DBlack2021/how-far-am-i-from-the-bean",
    "description":"An app to see how far various locations are from Cloud Gate in Chicago",
    "live_url":"https://how-far-am-i-from-the-bean.vercel.app/",
-   "title":"How Far Am I From The Bean?",
+   "title":"Chicago Bean Tracker",
    "tools":["React", "NextJS", "CSS", "Google Maps API"]
   }, 
   {
