@@ -169,6 +169,29 @@ nav a {
   color: rgb(18, 185, 18);
 }
 
+#twitter {
+  transition: color 0.2s linear;
+}
+
+#github {
+  transition: color 0.2s linear;
+}
+
+#linkedin {
+  transition: color 0.2s linear;
+}
+
+#twitter:hover {
+  color: #1DA1F2;
+}
+
+#github:hover {
+  color: black;
+}
+
+#linkedin:hover {
+  color: white;
+}
 
 /* *** ABOUT ME STYLING *** */
 
