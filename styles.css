@@ -175,7 +175,7 @@ nav a {
 #about {
   display: flex;
   flex-direction: row;
-  align-items: stretch;
+  align-items: center;
   padding-top: 75px;
 }
 
@@ -183,7 +183,7 @@ nav a {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  width: 50%;
+  width: 80%;
   margin-bottom: 40px;
 }
 
