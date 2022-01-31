@@ -233,6 +233,7 @@ nav a {
 
 .about-me-text {
   text-align: left;
+  width: 90%;
 }
 
 .image-skills {
@@ -252,16 +253,6 @@ nav a {
 
 .mario:hover {
   color: transparent;
-  transition: 250ms ease;
-}
-
-.homeroom {
-  color: var(--main-text-color);
-  transition: 250ms ease;
-}
-
-.homeroom:hover {
-  color: #ffd906;
   transition: 250ms ease;
 }
 
