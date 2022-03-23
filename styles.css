@@ -1,21 +1,3 @@
-/* *** TABLE OF CONTENTS *** */
-
-/*
-
-  Global Styles - 19
-  Nav Bar - 69
-  Landing - 143
-  About Me - 173
-  Skillbars - 245
-  Portfolio - 286
-  Portfolio Cards - 305
-  Contact - 389
-  Media Queries - 473 
-  Misc - 501
-
-*/
-
-
 /* *** GLOBAL STYLES *** */
 
 :root {
@@ -254,6 +236,29 @@ nav a {
 .mario:hover {
   color: transparent;
   transition: 250ms ease;
+}
+
+.northeastern-red {
+  width: 100%;
+  background: red;
+  background-clip: text;
+  -webkit-background-clip: text;
+  background-size: contain;
+  color: var(--main-text-color);
+}
+
+.northeastern-white {
+  width: 100%;
+  background: white;
+  background-clip: text;
+  -webkit-background-clip: text;
+  background-size: contain;
+  color: var(--main-text-color);
+}
+
+.neu:hover span {
+  color: transparent;
+  transition: 350ms ease;
 }
 
 /* *** SKILLBAR STYLING *** */
