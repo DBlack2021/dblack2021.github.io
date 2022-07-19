@@ -194,8 +194,9 @@ nav a {
 
 .fiveable-logo {
   display: inline-block;
-  height: 48px;
-  width: 96px;
+  /* height: 48px;
+  width: 96px; */
+  
   vertical-align: middle;
   transform: scale(1);
   transition: transform 0.2s ease;
@@ -562,7 +563,7 @@ textarea {
 
 /* Slideshow container */
 .gallery {
-  max-width: 50%;
+  max-width: 40%;
   position: relative;
   display: flex;
   flex-direction: row;
