@@ -35,10 +35,10 @@
    "tools":["React", "NextJS", "CSS", "Google Maps API"]
   }, 
   {
-   "code_url":"https://github.com/DBlack2021/react-pokedex",
-   "description":"WIP: Gotta Catch 'Em All! A paginated pokedex built in React",
-   "live_url":"",
-   "title":"React Pokedex",
-   "tools":["React", "MaterialUI", "CSS", "PokeAPI"]
+   "code_url":"",
+   "description":"A photo editing app built with Java, final project for CS 3500 (Object-Oriented Design)",
+   "live_url":"https://youtu.be/7JfunqSYRP0",
+   "title":"Image Processor",
+   "tools":["Java", "Swing", "JUnit4"]
   }
 ]
