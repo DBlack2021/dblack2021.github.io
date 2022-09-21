@@ -169,16 +169,16 @@
         <form class="contact-form" action = "https://formsubmit.co/dylan.black2021@gmail.com" method="POST">
           <p class="err-msg"></p>
           <div class="user-info">
-            <input type="text" class="input name" placeholder="Your Name" required/>
-            <input type="email" class="input email" placeholder="Your Email" required/>
+            <input name="name" type="text" class="input name" placeholder="Your Name" required/>
+            <input name="email" type="email" class="input email" placeholder="Your Email" required/>
           </div>
 
           <div class="subject-container">
-            <input type="text" class="input subject" placeholder="Subject" required/>
+            <input name="subject" type="text" class="input subject" placeholder="Subject" required/>
           </div>
           
           <div class="msg">
-            <textarea rows="5" cols="50" class="area message" placeholder="Your Message Here..." required></textarea>
+            <textarea rows="5" cols="50" class="area message" name="message" placeholder="Your Message Here..." required></textarea>
           </div>
           <input type="submit" class="contact-submit"></input>
         </form>
