@@ -64,42 +64,6 @@ fetch('./projects.json').then((response) => {
   projectsSection.innerHTML = tiles;
 })
 
-
-//(title, description, tools, codeLink, liveLink)
-
-emailjs.init("user_OJTtqIGWClEsZGporBH7O");
-
-let contactForm = document.querySelector('.contact-form');
-let errField = document.querySelector(".err-msg");
-          
-
-function validateInput(data) {
-  console.log(data);
-  if(!data.name || !data.email || !data.message || !data.subject) {
-    errField.innerHTML = "Please fill out the whole form. Thanks!"
-    return false;
-  }
-  return true;
-}
-
-contactForm.addEventListener('submit', (event) => {
-  event.preventDefault();
-
-  let name = document.querySelector(".name");
-  let email = document.querySelector(".email");
-  let message = document.querySelector(".message");
-  let subject = document.querySelector(".subject");
-
-  let formData = {
-    name: name.value,
-    email: email.value,
-    message: message.value,
-    subject: subject.value
-  }
-  
-  validateInput(data);
-});
-
 let slideIndex = 1;
 showSlides(slideIndex);
 
