@@ -68,6 +68,7 @@ let slideIndex = 1;
 showSlides(slideIndex);
 
 // Next/previous controls
+//adding a comment to push to git???
 
 const plusSlides = n => {
   console.log("got here");
