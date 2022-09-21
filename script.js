@@ -96,27 +96,8 @@ contactForm.addEventListener('submit', (event) => {
     message: message.value,
     subject: subject.value
   }
-
-
-  // these IDs from the previous steps
-  let btn = document.querySelector(".contact-submit")
-  btn.value = "Sending..."
-  emailjs.send('service_7l0wqyk', 'template_z20zdqy', formData)
-      .then(function() {
-          if(!validateInput(formData)) {
-            console.log(event.target);
-            return;
-          }
-          btn.value = "Submit"
-          alert("Your message has been successfully sent. Have a nice day!");
-          name.value = "";
-          email.value = "";
-          message.value = "";
-          subject.value = "";
-      }).catch((error) => {
-        console.log(error);
-        errField.innerHTML = "There was an issue submitting your message. Please try again."
-      });
+  
+  validateInput(data);
 });
 
 let slideIndex = 1;
