@@ -621,3 +621,7 @@ textarea {
   width: 100%;
   text-align: center;
 }
+
+.resume-skills {
+  color: var(--main-text-color);
+}
