@@ -184,6 +184,10 @@ nav a {
   padding-top: 75px;
 }
 
+#about > h3 {
+  font-size: 36px;
+}
+
 .final-about-me {
   display: flex;
   flex-direction: column;
