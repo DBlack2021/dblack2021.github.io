@@ -16,13 +16,11 @@ export function Tile (title, description, tools, codeLink, liveLink, img) {
       )).join('')}
     </ul>
     <div class="back-links">
-      ${codeLink ?
+      ${codeLink &&
         `<a href=${codeLink} target="_blank">See the Code</a>`
-        : ""
       }
-      ${liveLink?
+      ${liveLink &&
         `<a href=${liveLink} target="_blank">See It In Action</a>`
-        : ""
       }
     </div>
   </div>

@@ -40,5 +40,12 @@
    "live_url":"https://youtu.be/7JfunqSYRP0",
    "title":"Image Processor",
    "tools":["Java", "Swing", "JUnit4"]
+  },
+  {
+    "code_url":"",
+    "description": "Accessible online data visualizations of the DisabilityTech Market, created as a data analyst for the Howe Innovation Center",
+    "live_url":"https://data.perkins.org/",
+    "title":"DisabilityTech Analysis",
+    "tools":["JavaScript", "Highcharts", "Python / Pandas", "Google Sheets API"]
   }
 ]
