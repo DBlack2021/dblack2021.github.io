@@ -1,11 +1,18 @@
 [
   {
-   "code_url":"https://github.com/DBlack2021/dblack2021.github.io",
-   "description":"My personal website to house my portfolio. Look around, you're here!",
-   "live_url":"https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstleyVEVO",
-   "title":"Personal Website",
-   "tools":["HTML", "CSS", "JavaScript", "JSON"]
+    "code_url":"",
+    "description": "Accessible online data visualizations of the DisabilityTech Market, created as a data analyst for the Howe Innovation Center",
+    "live_url":"https://data.perkins.org/",
+    "title":"DisabilityTech Analysis",
+    "tools":["JavaScript", "Highcharts", "Python / Pandas", "Google Sheets API"]
   },
+  {
+    "code_url":"",
+    "description":"A photo editing app built with Java, final project for CS 3500 (Object-Oriented Design)",
+    "live_url":"https://youtu.be/7JfunqSYRP0",
+    "title":"Image Processor",
+    "tools":["Java", "Swing", "JUnit4"]
+   },
   {
    "code_url":"https://github.com/DBlack2021/movie-picker",
    "description":"Can't decide what to watch? Let fate decide!",
@@ -19,14 +26,7 @@
    "live_url":"https://message--board.vercel.app/",
    "title":"Message Board",
    "tools":["React", "CSS", "NextJS", "Firebase Firestore", "Firebase Authentication"]
-  }, 
-  {
-   "code_url":"",
-   "description":"As an intern at Fiveable, I developed and migrated React components and worked with both dev. and design teams to develop new features",
-   "live_url":"http://fiveable.me",
-   "title":"Fiveable",
-   "tools":["React", "NextJS", "MaterialUI", "React Spring", "Firebase/Firestore"]
-  },  
+  },   
   {
    "code_url":"https://github.com/DBlack2021/how-far-am-i-from-the-bean",
    "description":"An app to see how far various locations are from Cloud Gate in Chicago",
@@ -35,17 +35,17 @@
    "tools":["React", "NextJS", "CSS", "Google Maps API"]
   }, 
   {
-   "code_url":"",
-   "description":"A photo editing app built with Java, final project for CS 3500 (Object-Oriented Design)",
-   "live_url":"https://youtu.be/7JfunqSYRP0",
-   "title":"Image Processor",
-   "tools":["Java", "Swing", "JUnit4"]
-  },
+    "code_url":"https://github.com/DBlack2021/dblack2021.github.io",
+    "description":"My personal website to house my portfolio. Look around, you're here!",
+    "live_url":"https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstleyVEVO",
+    "title":"Personal Website",
+    "tools":["HTML", "CSS", "JavaScript", "JSON"]
+   },
   {
     "code_url":"",
-    "description": "Accessible online data visualizations of the DisabilityTech Market, created as a data analyst for the Howe Innovation Center",
-    "live_url":"https://data.perkins.org/",
-    "title":"DisabilityTech Analysis",
-    "tools":["JavaScript", "Highcharts", "Python / Pandas", "Google Sheets API"]
-  }
+    "description":"As an intern at Fiveable, I developed and migrated React components and worked with both dev. and design teams to develop new features",
+    "live_url":"http://fiveable.me",
+    "title":"Fiveable",
+    "tools":["React", "NextJS", "MaterialUI", "React Spring", "Firebase/Firestore"]
+   }
 ]
