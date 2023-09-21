@@ -2,7 +2,7 @@
   {
     "code_url":"",
     "description": "Accessible online data visualizations of the DisabilityTech Market, created as a data analyst for the Howe Innovation Center",
-    "live_url":"https://data.perkins.org/",
+    "live_url":"https://www.perkins.org/innovation/resource-center/disabilitytech-data-visualizations/",
     "title":"DisabilityTech Analysis",
     "tools":["JavaScript", "Highcharts", "Python / Pandas", "Google Sheets API"]
   },
