@@ -219,7 +219,21 @@ nav a {
 
 .about-me-text {
   text-align: left;
+  font-size: 36px;
   width: 90%;
+}
+
+.about-me-text > a {
+  color: var(--main-text-color);
+  text-decoration: underline;
+}
+
+#tjx-link {
+  transition: color 0.3s ease;
+}
+
+#tjx-link:hover {
+  color: rgb(143, 41, 43);
 }
 
 .image-skills {
