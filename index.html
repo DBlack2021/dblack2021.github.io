@@ -1,187 +1,201 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Dylan Black</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dylan Black | Princeton University</title>
     
-    <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-
-    <link href="styles.css" rel="stylesheet" type="text/css" />
-    <link href="./public/favicon.ico" rel="shortcut icon" type="image/jpg" />
-  </head>
-
-  <body>
-    <header>
-      <div class="nav-container">
-        <img src="./public/tetris_initials.svg" alt="DB" class="logo animate__animated animate__slideInDown"/>
-
-        <nav class="animate__animated animate__fadeInRightBig">
-          <ul>
-            <li><a class="fancy-link" href="#about">About</a></li>
-            <li><a class="fancy-link" href="#publications">Publications</a></li>
-            <li><a class="fancy-link" href="#contact">Contact</a></li>
-            <li><a class="fancy-link" href="./public/DYLAN_BLACK_RESUME.pdf" download>Resume</a></li>
-            <li><a class="fancy-link" href="./public/DYLAN_BLACK_CV_MARCH2025.pdf" download>CV</a></li>
-          </ul>
-        </nav>
-
-      </div>
-    </header>
+    <!-- Professional Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,700;1,600&display=swap" rel="stylesheet">
     
-    <section class="landing animate__animated animate__zoomInDown">
-      <div class="intro-text">
-        <h1>Hey! I'm <span class="bi-flag">Dylan</span></h1>
-        <div class="social-icons">
-          <a href="https://twitter.com/DBlack2021" target="_blank">
-            <i id="twitter" class="fab fa-twitter"></i>
-          </a>
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
-          <a href="https://github.com/DBlack2021" target="_blank">
-            <i id="github" class="fab fa-github"></i>
-          </a>
-           
-          <a href="https://linkedin.com/in/dylan-black-2021" target="_blank">
-            <i id="linkedin" class="fab fa-linkedin-in"></i>
-          </a>
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <nav>
+        <div class="container nav-content">
+            <a href="#" class="nav-logo">Dylan Black</a>
+            <div class="nav-links">
+                <a href="#about">Bio</a>
+                <a href="#research">Research</a>
+                <a href="https://www.dropbox.com/scl/fi/pqz8a2ojpfmio1bmjio1p/Dylan_Black_CV.pdf?rlkey=xbwlux0a82hysh7g7mng6ywtd&st=hezmqcwa&dl=0" target="_blank">CV</a>
+            </div>
         </div>
-        <h3 style="margin-top: 15px">
-          <span
-          class="txt-rotate"
-          data-period="100"
-          data-rotate='["Aspiring Economist", "Professional Nerd", "Swing Dancer", "Data Scientist"]'></span>
-        </h3>
-      </div>
-      <h3 class="scroll-text">Scroll To Learn More About Me and My Work</h3>
-    </section>
+    </nav>
 
-    <section id="about">
-        
-      <div class="final-about-me">
-        <h1>About Me</h1>
-        <h3 class="about-me-text">Hello! I'm an undergraduate student at <span class="neu"><span class="northeastern-red neu">Northeastern</span> <span class = "northeastern-white neu">University</span> </span>
-          majoring in History and Economics and minoring in Data Science and Mathematics interested in labor economics and the economics of education as well as economic history. I'm an incoming predoctoral fellow at the <a href="https://irs.princeton.edu/" id = "princeton-link">Princeton University Industrial Relations Section</a>. I've previously worked as a 
-          Market Research and Data Analyst Co-Op at the <a href="https://www.perkins.org/innovation/" id="howe-link">Howe Innovation Center</a> of the Perkins School for the Blind and as a Data Science co-op at <a href = "https://tjx.com" id = "tjx-link">TJX</a>. In my free time, I love watching movies, playing <span class="mario">classic video games</span>, and researching history. 
-          I'm passionate about research, ed-tech, and building products that help others.
-        </h3>
-      </div>
-      
-      <div class="image-skills">
-        <h2>Technology</h2>
-        <!-- Level 1 (Beginner): 33% filled, Level 2 (Intermediate): 66% filled, Level 3 (Expert): 100% filled -->
-        <div class="skill-bar-container">
-          <span class="skill-name">Python (Matplotlib, Pandas, Numpy)</span>
-          <span class="skill-level">Advanced</span>
-          <span class="skill-bar level3"></span>
-        </div>
+    <div class="container">
+        <!-- Hero Section -->
+        <header class="hero">
+            <div class="hero-content">
+                <h1 class="hero-title">Dylan Black</h1>
+                <p class="hero-subtitle">
+                    Pre-doctoral fellow at the Industrial Relations Section, Princeton University. Researching labor economics, economic history, and political economy.
+                </p>
+                <div class="social-buttons">
+                    <div class="contact-dropdown">
+                        <button class="btn btn-dark">
+                            <i class="fa-regular fa-envelope"></i> Get in Touch <i class="fa-solid fa-chevron-down" style="font-size: 0.7rem; opacity: 0.7; margin-left: 5px;"></i>
+                        </button>
+                        <div class="dropdown-menu">
+                            <a href="mailto:db4742@princeton.edu" class="dropdown-item">
+                                <span class="dropdown-label">Professional</span>
+                                <span class="dropdown-email">db4742@princeton.edu</span>
+                            </a>
+                            <a href="mailto:dylan.black2021@gmail.com" class="dropdown-item">
+                                <span class="dropdown-label">Personal</span>
+                                <span class="dropdown-email">dylan.black2021@gmail.com</span>
+                            </a>
+                        </div>
+                    </div>
+                    <a href="https://github.com/DBlack2021" class="btn btn-white" target="_blank">
+                        <i class="fa-brands fa-github"></i> GitHub
+                    </a>
+                    <a href="https://x.com/DBlack2021" class="btn btn-white">
+                        <i class="fa-brands fa-x-twitter"></i> Twitter
+                    </a>
+                    <a href="https://www.linkedin.com/in/dylan-black-economist/" class="btn btn-white">
+                        <i class="fa-brands fa-linkedin"></i> LinkedIn
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image-container">
+                <img src="public/headshot.jpg" alt="Dylan Black" class="headshot" onerror="this.src='https://ui-avatars.com/api/?name=Dylan+Black&background=f1f5f9&color=475569&size=400'">
+            </div>
+        </header>
 
-        <div class="skill-bar-container">
-          <span class="skill-name">R</span>
-          <span class="skill-level">Advanced</span>
-          <span class="skill-bar level3"></span>
-        </div>
+        <!-- Biography Section -->
+        <section id="about" class="section-block">
+            <h2 class="section-header">Biography</h2>
+            <div class="divider-full"></div>
+            
+            <div class="bio-text">
+                <p>
+                    I am a pre-doctoral fellow at the Princeton University Industrial Relations Section, working with Ellora Derenoncourt and Zachary Bleemer. My research interests lie at the intersection of labor economics, economic history, and political economy with a broader focus on the study of inequality and the development of American capitalism in the nineteenth and twentieth centuries. 
+                </p>
+                <p>
+                    I study how social organizations and cultural institutions such as labor unions, racial hierarchies, and coercive labor systems have shaped labor markets and determined economic inequality. My work primarily employs quasi-experimental and historical methods to explore these dynamics.
+                </p>
+                <p>
+                    I graduated from Northeastern University in 2025 with a B.S. in Economics and History and minors in Data Science and Mathematics. My prior experience includes roles as a market research co-op for the <a href="https://www.perkins.org/innovation/" class="inline-link" target="_blank">Perkins Innovation Center</a> and a data science co-op at <a href="https://www.tjx.com/" class="inline-link" target="_blank">TJX</a>.
+                </p>
+            </div>
+        </section>
 
-        <div class="skill-bar-container">
-          <span class="skill-name">SQL</span>
-          <span class="skill-level">Advanced</span>
-          <span class="skill-bar level3"></span>
-        </div>
+        <!-- Research Section -->
+        <section id="research" class="section-block">
+            <h2 class="section-header">Research</h2>
+            <div class="divider-full"></div>
 
-        <div class="skill-bar-container">
-          <span class="skill-name">Stata</span>
-          <span class="skill-level">Intermediate</span>
-          <span class="skill-bar level2"></span>
-        </div>
+            <div class="pub-category">Publications</div>
+            
+            <div class="pub-item">
+                <a href="https://www.perkins.org/wp-content/uploads/2023/09/20230913_DisabilityTechWhitepaper_vF.pdf" target="_blank" class="pub-title-container">
+                    <h3 class="pub-title">Defining DisabilityTech: The Rise of Inclusive Innovation</h3>
+                </a>
+                <div class="pub-citation">
+                    (2023). <strong>White Paper</strong>, Perkins Innovation Center, Perkins School for the Blind.
+                </div>
+                <div class="pub-actions">
+                    <span class="action-link abstract-trigger" onclick="toggleAbstract(this)">
+                        <i class="fa-solid fa-chevron-down"></i> Abstract
+                    </span>
+                </div>
+                <div class="abstract-wrapper">
+                    <div class="abstract-content">
+                        <div class="abstract-text">
+                            This white paper provides a foundational definition for "DisabilityTech" as a distinct industrial and innovative sector. By synthesizing market trends and the needs of the visually impaired community, I establish a framework for how inclusive design drives broader economic value. The report outlines the market potential of assistive technologies and advocates for an ecosystem-based approach to scaling innovations that address systemic barriers to economic participation for people with disabilities.
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-        <div class="skill-bar-container">
-          <span class="skill-name">React</span>
-          <span class="skill-level">Intermediate</span>
-          <span class="skill-bar level2"></span>
-        </div>
+            <div class="pub-category">Working Papers</div>
 
-        <div class="skill-bar-container">
-          <span class="skill-name">Node.JS</span>
-          <span class="skill-level">Beginner</span>
-          <span class="skill-bar level1"></span>
-        </div>
+            <div class="pub-item">
+                <h3 class="pub-title">Labor Disputes and Creative Output: Evidence from the 1942 AFM Recording Ban</h3>
+                <div class="pub-citation">
+                    (2025). <strong>Working Paper</strong>.
+                </div>
+                <div class="pub-actions">
+                    <a href="https://www.dropbox.com/scl/fi/k0e1n8euzcs99gz120p4c/Musicians_Strike_Draft_Dylan_Black.pdf?rlkey=cc84fs35cvwcwyk93ipkwn58e&st=hddrxpob&dl=0" class="action-link">
+                        <i class="fa-solid fa-file-lines"></i> Latest Draft
+                    </a>
+                    <span class="action-link abstract-trigger" onclick="toggleAbstract(this)">
+                        <i class="fa-solid fa-chevron-down"></i> Abstract
+                    </span>
+                </div>
+                <div class="abstract-wrapper">
+                    <div class="abstract-content">
+                        <div class="abstract-text">
+                            Can labor disputes permanently reshape the output of an entire industry? I study this question using the 1942 American Federation of Musicians (AFM) recording ban, which barred unionized musicians from commercial recording for over two years. I employ an event-study design comparing genre-styles that experienced larger output declines during the ban to those less affected, exploiting continuous variation in strike exposure across 134 genre-style pairs drawn from over 1 million American releases in Discogs, an open-source release database. I find that on average styles lost approximately 2 percentage points of within-genre market share — a 23% decline relative to the baseline average — that persists without attenuation for at least 20 years. The mechanism was supply-side displacement: while RCA Victor and Columbia refused to settle until 1944, hundreds of independent labels settled throughout 1943, entering genres previously dominated by the majors and recording smaller-group, experimental styles that permanently diversified the musical landscape. These findings provide the first quantitative causal evidence that a labor action restructured a creative industry's composition, contributing to the literature on non-wage effects of strikes and the economics of creative production
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-        <div class="skill-bar-container">
-          <span class="skill-name">Express</span>
-          <span class="skill-level">Beginner</span>
-          <span class="skill-bar level1"></span>
-        </div>
+            <div class="pub-category">Non-Economics Work</div>
 
-        <h3 class="resume-skills">See My <a class="resume-skills" href="./public/DYLAN_BLACK_RESUME.pdf" download>Resume</a> or <a class="resume-skills" href="./public/DYLAN_BLACK_CV_MARCH2025.pdf" download>CV</a> For More!</h3>
-      </div>
-    </section>
+            <div class="pub-item">
 
-    <section id="publications">
-      <h1>Publications</h1>
-      <div class = "citations">
-        <h3>Coming Soon!</h3>
-      </div>
-    </section>
+                <a href="/public/TV on a Tray.pdf" target="_blank" class="pub-title-container">
+                  <h3 class="pub-title">TV On a Tray: Prepared Meals and Food Culture in the United States, 1950-Present</h3>
+                </a>
+                <div class="pub-citation">
+                    (2022). <strong>Northeastern University Historical Review</strong> 2: 73-99.
+                </div>
+                <div class="pub-actions">
+                    <span class="action-link abstract-trigger" onclick="toggleAbstract(this)">
+                        <i class="fa-solid fa-chevron-down"></i> Abstract
+                    </span>
+                </div>
+                <div class="abstract-wrapper">
+                    <div class="abstract-content">
+                        <div class="abstract-text">
+                          Since their introduction to American households in the early 1950s, prepared meals have fundamentally reshaped the cultural, domestic, and entertainment landscape of the United States. Beginning with the Swanson TV Dinner in 1954, the ready-made meal industry grew from a practical solution to surplus inventory into a multi-billion dollar force transforming how Americans cook, eat, and engage with media. This paper examines the history of prepared meals from 1950 to the present through four thematic lenses: changing food culture and consumption practices, gender and domestic labor, public perception and health discourse, and the relationship between prepared meals and television. Drawing on advertisements, journalism, literature, and art, the paper argues that prepared meals have been the single most important force reshaping modern American food culture, simultaneously reflecting and actively transforming domestic life, gender roles, and consumer culture. Understanding this history is essential to understanding broader shifts in the American household and its relationship to food and entertainment.
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-    <section id="portfolio">
-      <h1>Selected Projects</h1>
-      
-      <div class="projects">
-        <!-- Added w/ JS -->
-      </div>
+            <div class="pub-item">
+              
+                 <a href="https://bpb-us-e1.wpmucdn.com/sites.northeastern.edu/dist/1/7166/files/2024/07/Journal-Spring-2023.pdf" target="_blank" class="pub-title-container">
+                  <h3 class="pub-title">Marxist Dehumanization and Alienation in Duncan Jones' <em>Moon</em></h3>
+                </a>
+                <div class="pub-citation">
+                    (2023). <strong>EconPress</strong>: 24-32.
+                </div>
+                <div class="pub-actions">
+                    <span class="action-link abstract-trigger" onclick="toggleAbstract(this)">
+                        <i class="fa-solid fa-chevron-down"></i> Abstract
+                    </span>
+                </div>
+                <div class="abstract-wrapper">
+                    <div class="abstract-content">
+                        <div class="abstract-text">
+                          Duncan Jones' 2009 science fiction film Moon has been widely analyzed through the lens of cloning ethics and questions of human identity, yet critics have largely overlooked its rich engagement with Marxist theory. This paper applies Marxist film theory to Moon, arguing that the film's protagonist, Sam Bell, serves as a figure of proletarian alienation whose experiences under the corporate authority of Lunar Industries mirror Marx's three stages of estrangement: alienation from one's labor, from one's human essence, and from other individuals. Through close analysis of character, mise-en-scène, and narrative structure, this paper demonstrates that Sam Bell I embodies the alienated worker under capitalism while Sam Bell II functions as a revolutionary figure whose ultimate overthrow of Lunar Industries enacts a symbolic Communist revolution. In doing so, Moon affirms the capacity of science fiction to engage seriously with political and economic theory through speculative worldbuilding.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-      <h3 class="github-head">See the rest on <a href="http://github.com/DBlack2021" class="github">GitHub</a></h3>
+        <footer>
+            <p>&copy; 2026 Dylan Black</p>
+        </footer>
+    </div>
 
-      <!-- <h1>Gallery</h1> -->
-      <!-- <div class="gallery"> -->
-        <!-- <a class="prev" onclick="plusSlides(-1)">&#10094;</a> -->
-        <!-- Full-width images with number and caption text -->
-        <!-- <div class="mySlides fade"> -->
-          <!-- <img src="public/screenshots/fiveable-blog.png" style="width:100%"> -->
-          <!-- <div class="text">Fiveable Blog Page</div> -->
-        <!-- </div> -->
-
-        <!-- <div class="mySlides fade"> -->
-          <!-- <img src="public/screenshots/fiveable-search.png" style="width:100%"> -->
-          <!-- <div class="text">Fiveable Search Results</div> -->
-        <!-- </div> -->
-
-        <!-- <div class="mySlides fade"> -->
-          <!-- <img src="public/screenshots/fiveable-slides.png" style="width:100%"> -->
-          <!-- <div class="text">Fiveable Slides Page</div> -->
-        <!-- </div> -->
-
-        <!-- Next and previous buttons -->
-        <!-- <a class="next" onclick="plusSlides(1)">&#10095;</a> -->
-      <!-- </div> -->
-    </section>
-
-    <section id="contact">
-      <div class="contact-title">        
-        <h1>Want to Chat?</h1>    
-      </div>
-
-      <div class="contact-form-container">
-        <h2>Contact Me</h2> 
-        <form class="contact-form" action = "https://formsubmit.co/dylan.black2021@gmail.com" method="POST">
-          <p class="err-msg"></p>
-          <div class="user-info">
-            <input name="name" type="text" class="input name" placeholder="Your Name" required/>
-            <input name="email" type="email" class="input email" placeholder="Your Email" required/>
-          </div>
-
-          <div class="subject-container">
-            <input name="subject" type="text" class="input subject" placeholder="Subject" required/>
-          </div>
-          
-          <div class="msg">
-            <textarea rows="5" cols="50" class="area message" name="message" placeholder="Your Message Here..." required></textarea>
-          </div>
-          <input type="submit" class="contact-submit" value = "Submit" />
-        </form>
-      </div>
-    </section>
-    <script src="script.js" type="module"></script>
-  </body> 
+    <script>
+        function toggleAbstract(btn) {
+            const item = btn.closest('.pub-item');
+            item.classList.toggle('active');
+        }
+    </script>
+</body>
 </html>
